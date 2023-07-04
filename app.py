@@ -14,7 +14,7 @@ from langchain.prompts.chat import (
 
 from langchain.chains import LLMChain
 
-os.environ['OPENAI_API_KEY'] = apikey
+apikey = os.getenv('OPENAI_API_KEY')
 
 #App framework
 st.title('Coolblue slogan generator📝')
