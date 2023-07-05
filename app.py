@@ -4,6 +4,7 @@ import langchain
 import streamlit as st 
 import time
 
+from apikey import apikey
 from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts.chat import (
@@ -14,13 +15,12 @@ from langchain.prompts.chat import (
 
 from langchain.chains import LLMChain
 
-apikey = os.getenv('OPENAI_API_KEY')
+os.environ['OPENAI_API_KEY'] = apikey
 
 #App framework
 st.title('Coolblue slogan generator📝')
-st.markdown(""" Welkom bij de Coolblue slogan generator, waar jij net zoals Coolblue,
- grappige slogans kan maken voor zowat alles lost en vast zit. """ )
-object = st.text_input(' **Vul hier het object in waar je een slogan voor wil** ')
+st.markdown(""" Welkom bij de Coolblue slogan generator, waar je grappige slogans kunt maken voor zowat alles wat los en vast zit😁. """ )
+object = st.text_input(' **Vul hier het object in waar je een slogan voor wilt** ')
 
 #Chatmodel
 
