@@ -18,7 +18,7 @@ apikey = os.getenv('OPENAI_API_KEY')
 
 #App framework
 st.title('Coolblue slogan generator📝')
-st.markdown(""" Welkom bij de Coolblue slogan generator! Hier maak je slogans in de Coolblue stijl voor praktisch alles wat los en vast zit. Probeer en genereer 🤠 """ )
+st.markdown(""" Welkom bij de Coolblue slogan generator! Hier maak je slogans in de Coolblue stijl voor praktisch alles wat los en vast zit. Probeer, genereer en facineer 🤠 """ )
 object = st.text_input(' **Vul hieronder het object in waar je een slogan voor wilt** ')
 
 #Chatmodel
