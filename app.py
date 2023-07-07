@@ -44,3 +44,10 @@ if st.button('Begin te schrijven!'):
             st.write(response)
     except Exception as e:
         st.error(f"an error occurred:{e}")
+
+st.markdown("""
+---
+Mede mogelijk gemaakt door Jesse Kuipers | jesse.kuipers@coolblue.nl | https://www.linkedin.com/in/jessekuipers/
+
+Version: 1.0.0
+""")
