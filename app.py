@@ -14,6 +14,11 @@ from langchain.prompts.chat import (
 
 from langchain.chains import LLMChain
 
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_ENDPOINT"] = "https://api.langchain.plus"
+os.environ["LANGCHAIN_API_KEY"] = os.environ.get("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_PROJECT"] = "slogan-generator"
+
 apikey = os.getenv('OPENAI_API_KEY')
 
 #App framework
